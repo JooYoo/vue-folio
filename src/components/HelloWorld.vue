@@ -2,6 +2,27 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
+      <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+      <b-button size="size" variant="primary">
+           My Btn
+      </b-button>
+      <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
@@ -32,11 +53,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
+  @Prop()
+  private msg!: string;
 }
 </script>
 
