@@ -26,6 +26,10 @@ Vue.use(VueScrollactive)
 import Scrollspy from 'vue2-scrollspy';
 Vue.use(Scrollspy)
 
+// vuetify
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+Vue.use(Vuetify)
 
 Vue.config.productionTip = false
 

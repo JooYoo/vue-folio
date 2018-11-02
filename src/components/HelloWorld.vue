@@ -58,6 +58,10 @@
 						<li class="nav-item">
 				              <a class="nav-link btn btn-outline-dark btn-circle" href="#test"></a>
 						</li>
+
+							<li class="nav-item">
+				              <a class="nav-link btn btn-outline-dark btn-circle" href="#timeline"></a>
+						</li>
 	
 					</ul>
 	
@@ -77,6 +81,13 @@
 
 
 		<main>
+
+			<div>
+    <v-btn color="success">Success</v-btn>
+    <v-btn color="error">Error</v-btn>
+    <v-btn color="warning">Warning</v-btn>
+    <v-btn color="info">Info</v-btn>
+  </div>
 
 <div v-scroll-spy>
 			
@@ -127,6 +138,31 @@
 					<div class="col-lg-8 mx-auto">
 						<h2>test us</h2>
 						<p class="lead">test test testjfkjdklfjkdls;jakl;jfdsa</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="timeline" class="section hero is-primary is-fullheight">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						 <v-timeline>
+    <v-timeline-item
+      v-for="n in 4"
+      :key="n"
+      color="red lighten-2"
+      large
+    >
+      <span slot="opposite">Tus eu perfecto</span>
+      <v-card class="elevation-2">
+        <v-card-title class="headline">Lorem ipsum</v-card-title>
+        <v-card-text>
+          Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+        </v-card-text>
+      </v-card>
+    </v-timeline-item>
+  </v-timeline>
 					</div>
 				</div>
 			</div>
